@@ -142,6 +142,7 @@ struct header_nocase_cmp : public std::binary_function<std::string, std::string,
   }
 };
 typedef std::map<std::string, std::string, header_nocase_cmp> headers_t;
+typedef std::map<std::string, std::string, header_nocase_cmp> symlink_cache_t;
 
 //
 // Header "x-amz-meta-xattr" is for extended attributes.
